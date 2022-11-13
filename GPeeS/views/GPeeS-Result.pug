@@ -1,0 +1,41 @@
+doctype html
+html
+  head
+    title GPeeS - Resoults
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='GPeeS - Results.css')
+    script(defer='' src='../project-partB/GPeeS/views/js.js')
+  body
+    #container4
+      #itemm11
+        header G-Pee-S
+      #itemm22
+        form
+          p#demo
+          h1 Let&apos;s Pee...
+          table
+              tr
+                th Place
+                th Address
+                th Distance
+
+              each n in toilets
+                tr 
+                td=n.place
+                td=n.address
+                td=n.distance
+      #itemm33
+        h2 Menu
+        nav
+          ul
+            li
+              a(href='http://localhost:3000/') log-in
+            li
+              a(href='http://localhost:3000/GPeeS-SettingPage') Setting page
+            li
+              a(href='http://localhost:3000/selectCity') Resoults
+      #itemm44
+      #itemm55
+        footer Nitzan Lavon 2022

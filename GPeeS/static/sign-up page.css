@@ -1,0 +1,188 @@
+/*:root{
+    --myBrown:#9b2929;
+    --myYellow:#ffd000ed;
+}
+*{
+    text-align: center;
+}
+#GO{
+    background-color: yellow;
+}
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIBLnxbXrOVRoGIkTW8LgjQobgsWNyQVKcZQ&usqp=CAU");
+    color: var(--myBrown);
+}
+form{
+    background-color: rgb(245, 245, 123);
+    align-self: center;
+    position: relative;
+    left: 25%;
+    width: 50vw;
+    height: 70vh;
+    top: 10ch;
+    margin: 10px;
+    border: 2px solid black;
+    margin: 0;
+    
+}*/
+:root{
+    --myGreen:#93C178;
+    --myYellow:#F7EF6A;
+    --myBlue:#465C8B;
+    --myWhite:#DFDCE3;
+    --myBrown:#9b2929;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+@font-face {
+    font-family:bungeeSpice;
+    src: url(../project-partB/BungeeSpice-Regular.ttf);
+}
+
+@font-face {
+    font-family:Quicksand ;
+    src: url(../project-partB/Quicksand-VariableFont_wght.ttf);
+}
+
+*{
+    text-align: center;
+    margin: 1px;
+}
+
+header{
+    padding: 5px;
+    font-size: 150px; 
+    font-family: bungeeSpice;
+    position: relative;
+    top: 0%;
+}
+
+
+body{
+    background-color: var(--myYellow);
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+}
+
+li a{
+    display: block;
+    color:black;
+    width: 150px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #9b2929;
+    font-size: 20px;
+}
+
+li a:hover{
+    background-color: #7a0d0d;
+    color: white;
+}
+
+form{
+    position: relative;
+    top: 5%;
+    font-family: Quicksand;
+}
+
+form h2{
+    font-size:40px;
+}
+#register{
+    background-color: var(--myBrown);
+    padding: 10px;
+    font-size: 16px;
+}
+
+#container3{
+    display:grid;
+    grid-template-areas: 
+    'itemm1 itemm1 itemm1 itemm1 itemm1'
+    'itemm3 itemm2 itemm2 itemm2 itemm4'
+    'itemm5 itemm5 itemm5 itemm5 itemm5';  
+}
+
+#itemm1{
+    grid-area: itemm1;
+    background-color:rgb(249, 196, 98);
+    height: 25vh;
+    border: 2px solid var(--myBrown);
+}
+
+#itemm2{
+    grid-area: itemm2;
+    background-color: var(--myYellow);
+    height: 70vh;
+    align-content: center;
+    margin: 0px;
+}
+#itemm2 h1{
+    font-size: 40px;
+}
+#itemm2 h2{
+    font-size: 30px;
+}
+
+#itemm3{
+    grid-area: itemm3;
+    background-color:var(--myGreen);
+    height: 70vh; 
+    font-family: Quicksand;
+}
+
+#itemm3 h2{
+    font-size: 35px;
+    position: relative;
+    top: 5%;
+}
+
+#itemm3 nav{
+    position: relative;
+    top:10%;
+    left: 19%; 
+}
+
+#itemm4{
+    grid-area: itemm4;
+    background-color: #93C178;
+    height: 70vh;
+    background-image: url(https://cdn4.iconfinder.com/data/icons/person-actions/227/person-action-006-512.png);
+    background-position: center;
+    animation-name: imagebackground;
+    animation-duration: 2s;
+    animation-iteration-count:10;  
+}
+
+#itemm5{
+    grid-area: itemm5;
+    background-color:rgb(249, 196, 98);
+    height: 3vh;
+    position: relative;
+    bottom: 0;
+    border: 2px solid var(--myBrown);
+}
+
+@media screen and (max-width:600px) {
+    #container2 {
+        display: grid;
+        grid-template-areas: 
+        'item11'
+        'item33' 
+        'item22'
+        'item44'
+        'item55';
+    }    
+}
+
+@keyframes imagebackground{
+    0%{background-color: khaki;}
+    70%{background-color: var(--myBrown)}
+}
+

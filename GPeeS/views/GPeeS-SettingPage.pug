@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    title GPeeS - Setting Page
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel="stylesheet", href="settingpage.css")
+    script(defer='' src='../project-partB/GPeeS/views/js.js')
+  body
+    #container2
+      #item11
+        header G-Pee-S
+      #item22
+        form(action='/selectCity', method='get')
+          p#demo
+          h1 #{var1}
+          h2
+            | Please choose the
+            br
+            | requiered city:
+          label(for='city') city 
+          select#city.form-control(name='City')
+            option(value='Tel-Aviv') Tel-Aviv
+            option(value='Beer Sheeba') Beer Sheeba
+            option(value='Haifa') Haifa
+            option(value='Rehovot') Rehovot
+          br
+          br
+          input#button(type='submit', value='Hurry up! I need to pee!')
+      #item33
+        h2 Menu
+        nav
+          ul
+            li
+              a(href='http://localhost:3000/') log-in
+            li
+              a(href='http://localhost:3000/GPeeS-SettingPage') Setting page
+            li
+              a(href='http://localhost:3000/selectCity') Resoults
+      #item44
+      #item55
+        footer Nitzan Lavon 2022
+
+

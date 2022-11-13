@@ -1,0 +1,167 @@
+:root{
+    --myGreen:#93C178;
+    --myYellow:#F7EF6A;
+    --myBlue:#465C8B;
+    --myWhite:#DFDCE3;
+    --myBrown:#9b2929;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+@font-face {
+    font-family:bungeeSpice;
+    src: url(../project-partB/BungeeSpice-Regular.ttf);
+}
+
+@font-face {
+    font-family:Quicksand ;
+    src: url(../project-partB/Quicksand-VariableFont_wght.ttf);
+}
+
+*{
+    text-align: center;
+    margin: 1px;
+    
+}
+
+header{
+    padding: 5px;
+    font-size: 150px; 
+    font-family: bungeeSpice;
+    position: relative;
+    top: 0%;
+}
+
+#GO{
+    background-color: var(--myBrown);
+    padding: 12px;
+    font-size: 20px;
+}
+
+body{
+    background-color: var(--myYellow);
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    
+}
+
+li a{
+    display: block;
+    color:black;
+    width: 150px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #9b2929;
+    font-size: 20px;
+}
+
+li a:hover{
+    background-color: #7a0d0d;
+    color: white;
+}
+
+form{
+    position: relative;
+    top: 5%;
+    font-family: Quicksand;
+}
+
+form h2{
+    font-size:40px;
+}
+
+#container{
+    display: grid;
+    grid-template-areas: 
+    'item1 item1 item1 item1 item1'
+    'item3 item2 item2 item2 item4'
+    'item5 item5 item5 item5 item5';
+    
+}
+
+#item1{
+    grid-area: item1;
+    background-color:rgb(249, 196, 98);
+    height: 25vh;
+    border: 2px solid var(--myBrown);
+}
+
+#item1 p{
+    color: black;
+}
+
+#item2{
+    grid-area: item2;
+    background-color: var(--myYellow);
+    height: 70vh;
+    /*border: 2px solid var(--myBrown);*/
+    align-content: center;
+}
+
+#item3{
+    grid-area: item3;
+    background-color:var(--myGreen);
+    height: 70vh; 
+    font-family: Quicksand;
+    /*border: 2px solid var(--myBrown);*/
+}
+
+#item3 h2{
+    font-size: 35px;
+    position: relative;
+    top: 5%;
+}
+
+#item3 nav{
+    position: relative;
+    top:10%;
+    left: 19%; 
+}
+
+#item4{
+    grid-area: item4;
+    background-color: #93C178;
+    height: 70vh;
+    /*border: 2px solid var(--myBrown);*/
+    background-image: url(https://cdn4.iconfinder.com/data/icons/person-actions/227/person-action-006-512.png);
+     background-position: center;
+    animation-name: imagebackground;
+    animation-duration: 2s;
+    animation-iteration-count:10;
+    
+}
+
+#item5{
+    grid-area: item5;
+    background-color:rgb(249, 196, 98);
+    height: 3vh;
+    position: relative;
+    bottom: 0;
+    border: 2px solid var(--myBrown);
+
+
+}
+
+@media screen and (max-width:600px) {
+    #container {
+        display: grid;
+        grid-template-areas: 
+        'item1'
+        'item3' 
+        'item2'
+        'item4'
+        'item5';
+    }    
+}
+
+@keyframes imagebackground{
+    0%{background-color: khaki;}
+    70%{background-color: var(--myBrown)}
+}
+

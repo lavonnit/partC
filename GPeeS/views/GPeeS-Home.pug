@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    title GPeeS - Home
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='GPeeS - Home.css')
+    script(defer='' src='../project-partB/GPeeS/views/js.js')
+  body
+    #container
+      #item1
+        header G-Pee-S
+      #item2
+        form(action='/readUser', method='post')
+          p#demo
+          hi #{var4}
+          h2 Please log-in
+          br
+          label(for='userEmail') Enter your Email
+          input#userEmail(type='email', name='userEmail', placeholder='abc@def.com', required)
+          br
+          br
+          script.
+            window.alert("Please make sure to set the Password and Email at the right format")
+          label(for='pwd') Enter your password
+          input#pwd(type='password', name='pwd', placeholder='Password', required, minlength='6')
+          br
+          br
+          input#GO(type='submit', value='GO')
+          h4 Didn&apos;t sign-up yet? Please click the Sign-up link
+          div
+            a(href='/GPeeS-SignUp', target='_blank') Sign-up
+          |  
+          p#demo
+      #item3
+        h2 Menu
+        nav
+          ul
+            li
+              a(href='http://localhost:3000/') log-in
+            li
+              a(href='http://localhost:3000/GPeeS-SettingPage') Setting page
+            li
+              a(href='http://localhost:3000/selectCityuui') Resoults
+      #item4
+      #item5
+        footer Nitzan Lavon 2022
